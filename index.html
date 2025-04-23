@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Échecs en ligne</title>
+  <style>
+    canvas { background: url('images/board.png') no-repeat center/cover; }
+  </style>
+</head>
+<body>
+  <canvas id="chess" width="640" height="640"></canvas>
+  <script src="classes.js"></script>
+  <script>
+    // once classes.js is parsed, call the entry point:
+    if (typeof main === "function") {
+      main();
+    } else {
+      console.error("TeaVM entry point not found");
+    }
+  </script>
+</body>
+</html>
+
